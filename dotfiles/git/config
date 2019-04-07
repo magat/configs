@@ -1,0 +1,19 @@
+[core]
+	autocrlf = input
+	excludesfile = ~/.gitignore
+[alias]
+	st = status
+	co = checkout
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit 
+[color]
+	ui = auto
+	diff = auto
+	status = auto
+	branch = auto
+[log]
+	decorate = full
+	abbrevCommit = true
+[rebase]
+	autoStash = true
+[push]
+	default = simple
