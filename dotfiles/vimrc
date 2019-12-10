@@ -1,0 +1,55 @@
+" Sets the size of the history VIM remembers
+set history=500
+
+" filetype plugins
+filetype indent on
+
+" Show cursor coordinates
+set ruler
+
+" Make backspace work as normal
+set backspace=eol,start,indent
+
+" Go to next line when at the end of the current one
+set whichwrap+=<,>,h,l
+
+" Highlight search results
+set hlsearch
+" Use space to disable highlight
+map <silent> <space> :noh<cr>
+
+" Show matching brackets
+set showmatch
+set mat=2
+
+" Silence errors
+set noerrorbells
+set novisualbell
+
+" Enable syntax highlighting
+syntax enable
+
+" Colors
+colorscheme desert
+set background=dark
+
+" Encoding
+set encoding=utf8
+
+" Line numbering
+set number
+set relativenumber
+
+" Disable backuping edited files
+set nobackup
+set noswapfile
+
+" Replace tabs with spaces
+set expandtab
+set smarttab
+set shiftwidth=4
+set tabstop=4
+
+" Indentation 
+set ai " auto indent
+set wrap " wrap lines

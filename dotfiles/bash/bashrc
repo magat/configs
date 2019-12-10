@@ -1,0 +1,5 @@
+source ~/Code/setup/dotfiles/bash/aliases.sh
+source ~/Code/setup/dotfiles/bash/prompt.sh
+
+source ~/.bashrc_local
+
