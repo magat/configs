@@ -1,0 +1,15 @@
+---
+- name: Command line tools
+  homebrew:
+    name: ['wget', 'htop']
+    state: present
+
+- name: Desktop apps
+  homebrew_cask:
+    name: ['firefox', 'google-chrome', 'slack', 'iterm2', 'vlc', 'spectacle', 'spotify', '1password']
+    state: present
+
+- name: Work apps
+  homebrew_cask:
+    name: ['zoomus']
+    state: present

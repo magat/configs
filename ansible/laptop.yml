@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  connection: local
+  pre_tasks:
+    - import_tasks: tasks/cask.yml
+  roles:
+    - name: software
