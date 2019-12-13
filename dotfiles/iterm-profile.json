@@ -76,7 +76,7 @@
   "Command" : "",
   "Description" : "Default",
   "Mouse Reporting" : true,
-  "Screen" : -1,
+  "Screen" : -2,
   "Selection Color" : {
     "Green Component" : 0.8353000283241272,
     "Blue Component" : 1,
@@ -94,7 +94,7 @@
   "Non Ascii Font" : "Monaco 12",
   "Vertical Spacing" : 1,
   "Use Bold Font" : true,
-  "Option Key Sends" : 0,
+  "Option Key Sends" : 2,
   "Selected Text Color" : {
     "Green Component" : 0,
     "Blue Component" : 0,
@@ -211,8 +211,8 @@
       "Text" : "[1;2D"
     },
     "0xf703-0x280000" : {
-      "Action" : 11,
-      "Text" : "0x1b 0x1b 0x5b 0x43"
+      "Action" : 10,
+      "Text" : "f"
     },
     "0xf700-0x240000" : {
       "Action" : 10,
@@ -243,8 +243,8 @@
       "Text" : "[1;6B"
     },
     "0xf702-0x280000" : {
-      "Action" : 11,
-      "Text" : "0x1b 0x1b 0x5b 0x44"
+      "Action" : 10,
+      "Text" : "b"
     },
     "0xf72b-0x20000" : {
       "Action" : 10,
@@ -275,11 +275,11 @@
       "Text" : "[1;2P"
     }
   },
-  "Window Type" : 0,
+  "Window Type" : 15,
   "Cursor Type" : 2,
   "Background Image Location" : "",
   "Blur" : false,
-  "Scrollback Lines" : 1000,
+  "Scrollback Lines" : 0,
   "Send Code When Idle" : false,
   "Close Sessions On End" : true,
   "Terminal Type" : "xterm-256color",
