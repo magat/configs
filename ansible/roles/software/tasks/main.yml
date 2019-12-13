@@ -6,7 +6,12 @@
 
 - name: Desktop apps
   homebrew_cask:
-    name: ['firefox', 'google-chrome', 'slack', 'iterm2', 'vlc', 'spectacle', 'spotify', '1password']
+    name: ['firefox', 'google-chrome', 'slack', 'iterm2', 'vlc', 'spectacle', 'spotify', '1password', 'intellij-idea']
+    state: latest
+
+- name: Coding languages, libs and runtimes
+  homebrew:
+    name: ['golang', 'docker']
     state: present
 
 - name: Work apps
