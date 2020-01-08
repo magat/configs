@@ -1,20 +1,20 @@
 ---
 - name: Command line tools
   homebrew:
-    name: ['wget', 'htop']
+    name: ['wget', 'htop', 'bash-completion']
     state: present
 
 - name: Desktop apps
   homebrew_cask:
-    name: ['firefox', 'google-chrome', 'slack', 'iterm2', 'vlc', 'spectacle', 'spotify', '1password', 'intellij-idea']
+    name: ['firefox', 'google-chrome', 'slack', 'iterm2', 'vlc', 'spectacle', 'spotify', '1password', 'intellij-idea', 'zoomus', 'gimp']
     state: latest
+
+- name: Coding languages, libs and runtimes (cask)
+  homebrew_cask:
+    name: ['adoptopenjdk', 'docker']
+    state: present
 
 - name: Coding languages, libs and runtimes
   homebrew:
-    name: ['golang', 'docker']
-    state: present
-
-- name: Work apps
-  homebrew_cask:
-    name: ['zoomus']
+    name: ['golang', 'maven']
     state: present

@@ -53,3 +53,9 @@ set tabstop=4
 " Indentation 
 set ai " auto indent
 set wrap " wrap lines
+
+
+" git commit message rules
+autocmd FileType gitcommit set textwidth=72
+autocmd FileType gitcommit set colorcolumn=73
+

@@ -1,3 +1,6 @@
+[user]
+    name = Mathieu AGAR
+    email = magar@mirakl.com
 [core]
 	autocrlf = input
 	excludesfile = ~/.gitignore
