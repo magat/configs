@@ -2,21 +2,21 @@
     name = Mathieu AGAR
     email = magar@mirakl.com
 [core]
-	autocrlf = input
-	excludesfile = ~/.gitignore
+    autocrlf = input
+    excludesfile = ~/.gitignore
 [alias]
-	st = status
-	co = checkout
-	lol = log --graph --decorate --pretty=oneline --abbrev-commit 
+    st = status
+    co = checkout
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit 
 [color]
-	ui = auto
-	diff = auto
-	status = auto
-	branch = auto
+    ui = auto
+    diff = auto
+    status = auto
+    branch = auto
 [log]
-	decorate = full
-	abbrevCommit = true
+    decorate = full
+    abbrevCommit = true
 [rebase]
-	autoStash = true
+    autoStash = true
 [push]
-	default = simple
+    default = simple
