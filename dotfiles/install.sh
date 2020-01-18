@@ -2,8 +2,22 @@
 
 SETUP=$(pwd)
 
-ln -s ${SETUP}/git/config ~/.gitconfig
-ln -s ${SETUP}/git/ignore ~/.gitignore
-ln -s ${SETUP}/bash/bashrc ~/.bash_profile
-ln -s ${SETUP}/psqlrc ~/.psqlrc
-ln -s ${SETUP}/vimrc ~/.vimrc
+add(){
+  target=$1
+  location=$2
+
+  if [ -f "${target}" ]; then
+	  diff "${target}" "${location}" >/dev/null && echo "${target} already installed"
+	  diff "${target}" "${location}" >/dev/null || echo "Existing ${target}"
+	  return
+  fi
+
+  echo "Linking ${location} to ${target}"
+  ln -s "${SETUP}/${location}" "${target}"
+}
+
+add ~/.gitconfig git/config
+add ~/.gitignore git/ignore
+add ~/.bash_profile bash/bashrc
+add ~/.psqlrc psqlrc
+add ~/.vimrc vimrc
