@@ -4,9 +4,6 @@ set history=500
 " filetype plugins
 filetype indent on
 
-" Show cursor coordinates
-set ruler
-
 " Make backspace work as normal
 set backspace=eol,start,indent
 
@@ -31,7 +28,6 @@ syntax enable
 
 " Colors
 colorscheme desert
-set background=dark
 
 " Encoding
 set encoding=utf8
@@ -52,7 +48,6 @@ set tabstop=4
 " Indentation 
 set ai " auto indent
 set wrap " wrap lines
-
 
 " git commit message rules
 autocmd FileType gitcommit set textwidth=72
