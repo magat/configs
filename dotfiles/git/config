@@ -4,6 +4,7 @@
 [core]
     autocrlf = input
     excludesfile = ~/.gitignore
+    editor = vim
 [alias]
     st = status
     co = checkout
