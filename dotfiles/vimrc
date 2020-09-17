@@ -38,7 +38,6 @@ set encoding=utf8
 
 " Line numbering
 set number
-set relativenumber
 
 " Disable backuping edited files
 set nobackup

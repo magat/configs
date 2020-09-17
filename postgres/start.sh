@@ -1,5 +1,6 @@
 #!/bin/sh
 
+SETUP_DIR=~/Code/setup
 docker run \
   -d -p 5432:5432 \
   -v $SETUP_DIR/postgres/home:/home/postgres \

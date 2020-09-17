@@ -1,7 +1,7 @@
 ---
 - name: Command line tools
   homebrew:
-    name: ['wget', 'htop', 'bash-completion', 'httpie']
+    name: ['wget', 'htop', 'bash-completion', 'httpie', 'tree']
     state: present
 
 - name: Desktop apps
@@ -16,5 +16,5 @@
 
 - name: Coding languages, libs and runtimes
   homebrew:
-    name: ['golang', 'maven']
+    name: ['golang', 'maven', 'node']
     state: present
