@@ -1,9 +1,6 @@
 " Sets the size of the history VIM remembers
 set history=500
 
-" filetype plugins
-filetype indent on
-
 " Make backspace work as normal
 set backspace=eol,start,indent
 
@@ -27,7 +24,7 @@ set novisualbell
 syntax enable
 
 " Colors
-colorscheme desert
+colorscheme murphy
 
 " Encoding
 set encoding=utf8

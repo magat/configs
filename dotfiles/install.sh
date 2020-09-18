@@ -21,3 +21,4 @@ add ~/.gitignore git/ignore
 add ~/.bash_profile bash/bashrc
 add ~/.psqlrc psqlrc
 add ~/.vimrc vimrc
+add ~/.tmux.conf tmux.conf
