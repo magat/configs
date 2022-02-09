@@ -52,6 +52,12 @@ function git_prompt {
   echo -e "($color$location$RESET$markers)"
 }
 
+function kube_prompt() {
+  kubectl config current-context >/dev/null 2>&1 || exit 1
+
+  echo -ne "($(kubectl config current-context))"
+}
+
 prompt_command() {
   local last_exit="$?"
 
@@ -67,7 +73,8 @@ prompt_command() {
   PS1+="$CYAN[\w]$RESET "
   # Git prompt
   PS1+="$(git_prompt)"
-
+  # Current kubernetes clusters
+  PS1+="$(kube_prompt)"
 
   PS1+="$ "
 }
