@@ -20,4 +20,4 @@
 [rebase]
     autoStash = true
 [push]
-    default = simple
+    default = current

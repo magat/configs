@@ -1,5 +1,8 @@
+
 source ~/Code/setup/dotfiles/bash/aliases.sh
 source ~/Code/setup/dotfiles/bash/prompt.sh
+source ~/Code/setup/dotfiles/bash/git-completion.sh
 
 source ~/.bashrc_local
 
+complete -C /usr/local/bin/vault vault
